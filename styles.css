@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B0000; /* Dark Pink */
+    color: white;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.website-logo {
+    height: 50px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B0000; /* Dark Pink */
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    gap: 5px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1; /* Takes up remaining space between header and footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFF0F5; /* Light pink for a subtle contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h2 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #8B0000; /* Dark Pink */
+}
+
+.welcome-section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8B0000; /* Dark Pink */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #8B0000; /* Dark Pink */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 10px;
+}
+
+/* Pop-up Form */
+/* Pop-Up Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it appears on top */
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 1.8em;
+    color: #8B0000; /* Dark Pink */
+}
+
+.popup p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #8B0000; /* Dark Pink */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #8B0000;
+    cursor: pointer;
+}
+
+.popup .close-btn:hover {
+    color: #FFC0CB; /* Light Pink on hover */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
